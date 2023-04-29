@@ -450,6 +450,7 @@ p {
 .footer{
     position: absolute;
     display: flex;
+    bottom: 1;
     flex-direction: column;
     width: 100vw;
     background:#000;
@@ -1069,4 +1070,26 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
     filter: opacity(.5);
     margin-bottom: 3rem;
    
+}
+
+@media (max-width: 850px) {
+    .manual-pages img {
+        max-width: 50rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .manual-pages img {
+        max-width: 35rem;
+    }
+}
+@media (max-width: 351px) {
+    .manual-pages img {
+        max-width: 29rem;
+    }
+}
+@media (max-width: 291px) {
+    .manual-pages img {
+        max-width: 24rem;
+    }
 }
