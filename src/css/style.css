@@ -974,6 +974,10 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
     border-top: 3px solid rgb(255, 255, 255);
 }
 
+.requirements img:hover {
+    cursor: pointer;
+}
+
 .container-tittle-requirment{
     margin: 5rem auto;
 }
