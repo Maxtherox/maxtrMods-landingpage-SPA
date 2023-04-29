@@ -51,6 +51,7 @@ header {
     left: 0;
     z-index: 3;
     background-color: hsla(0, 0%, 5%, 0.486);
+    animation: top-to-down 1000ms 200ms cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
 }
 
 #navbar {
@@ -133,12 +134,33 @@ main::before{
     object-fit: cover;
     filter: brightness(.3) opacity(80%);
     box-shadow: 0 2rem 2rem -1rem rgba(0, 0, 0, 0.199);
+    animation: top-down-background 1500ms 250ms cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
 }
+
+@keyframes top-down-background {
+    0% {
+        transform: translateY(-800px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .home-content{
     max-width: 60rem;
     align-items: center;
     text-align: center;
+   
     
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .home-content {
@@ -154,6 +176,7 @@ main::before{
     max-height: 30.0rem;
    /* border: 1px solid red;*/
    color: rgb(255, 255, 255);
+   animation: opacity 500ms 300ms backwards, top-to-down 500ms 300ms backwards;
 }
 
 .container-tittle h1 {
@@ -257,6 +280,8 @@ button:hover{
     gap: 2.0rem;
 }
 
+
+
 .section-main-content p{
     font-size: 1rem ;
 }
@@ -310,6 +335,40 @@ button:hover{
     
 }
 
+.card:nth-child(1){
+    animation: left-to-right-cards 1s  700ms backwards;
+}
+.card:nth-child(2){
+    animation: right-to-left-cards 1400ms  900ms backwards;
+}
+.card:nth-child(3){
+    animation: left-to-right-cards 1800ms  1100ms backwards;
+}
+.card:nth-child(4){
+    animation: right-to-left-cards 2000ms  1300ms backwards;
+}
+
+@keyframes left-to-right-cards {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100% {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}
+@keyframes right-to-left-cards {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}
+
 .section-main-content .container-content {
     font-size: 10rem;
     text-align: start;
@@ -326,6 +385,18 @@ button:hover{
     margin: 14rem auto 7rem;
     max-width: 100rem;
     text-align: center;
+    animation: bottom-to-top 1s 300ms backwards;
+}
+
+@keyframes bottom-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 100;
+        transform: translateY(0);
+    }
 }
 
 .sub-tittle h2 {
@@ -341,6 +412,11 @@ button:hover{
     max-width: 60rem;
     max-height: 900%;
     margin: 0 auto;
+   
+}
+
+@keyframes identifier {
+    
 }
 
 p {
@@ -884,12 +960,6 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
     filter:  drop-shadow(0px 3px 1px #00000010) ;
     align-items: flex-start;
 }
-.sub-tittle-download {
-    background-color: #222222;
-    border-radius: 6px;
-}
-
-
 .sub-tittle-download img:hover{
     animation: glitch 1s infinite ;
     
@@ -1062,6 +1132,40 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
     gap: 2rem;
     margin-bottom: 3rem;
 }
+.manual-pages img:nth-child(1){
+   animation: left-to-right-cards 1s 600ms backwards;
+}
+.manual-pages img:nth-child(2){
+   animation: left-to-right-cards 1100ms 800ms backwards;
+}
+.manual-pages img:nth-child(3){
+   animation: left-to-right-cards 1200ms 1000ms backwards;
+}
+.manual-pages img:nth-child(4){
+   animation: left-to-right-cards 1300ms 1200ms backwards;
+}
+.manual-pages img:nth-child(5){
+   animation: left-to-right-cards 1400ms 1400ms backwards;
+}
+.manual-pages img:nth-child(6){
+   animation: left-to-right-cards 1500ms 1600ms backwards;
+}
+.manual-pages img:nth-child(7){
+   animation: left-to-right-cards 1600ms 1800ms backwards;
+}
+.manual-pages img:nth-child(8){
+   animation: left-to-right-cards 1700ms 2000ms backwards;
+}
+.manual-pages img:nth-child(9){
+   animation: left-to-right-cards 1700ms 2200ms backwards;
+}
+.manual-pages img:nth-child(10){
+   animation: left-to-right-cards 1800ms 2400ms backwards;
+}
+.manual-pages img:nth-child(11){
+   animation: left-to-right-cards 1100ms 2600ms backwards;
+}
+
 .manual-pages img{
     margin: 0 auto;
     width: 800px;
@@ -1096,5 +1200,38 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
 @media (max-width: 291px) {
     .manual-pages img {
         max-width: 24rem;
+    }
+}
+
+
+/* Button exception design*/
+
+.button-substituto-menu{
+    border: 1px solid white;
+    padding: 2.0rem 5.0rem;
+    color: white;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    transition: transform 1s, animation 1s, background 500ms ;
+    backdrop-filter: blur(1px);
+}
+.button-substituto-menu{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.button-substituto-menu:hover{
+    background-color: white;
+    animation: glitch 2s infinite;
+}
+
+/* animações de entrada*/
+@keyframes top-to-down {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: 0;
     }
 }

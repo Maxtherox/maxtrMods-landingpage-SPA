@@ -64,6 +64,12 @@ if(buttonMenu){
     buttonWiki.classList.add('active');
     buttonHome.classList.remove('active');  
   }
+  function buttonMenuClick(){
+    buttonDownload.classList.add('active');
+    buttonRequirements.classList.remove('active');
+    buttonWiki.classList.remove('active');
+    buttonHome.classList.remove('active'); 
+  }
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
