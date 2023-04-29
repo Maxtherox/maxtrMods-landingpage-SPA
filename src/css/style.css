@@ -22,9 +22,6 @@ body {
 }
 
 
-
-
-
 /*main::before{
     content: '';
     position: absolute;
@@ -69,7 +66,7 @@ nav {
 }
 
 ul{
-    padding: 15px;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +81,7 @@ ul img {
     margin-right: 40rem;
     max-width: 100%;
     display: flex;
-    padding-left: 10px;
+    padding-left: 1.0rem;
     transition:  2s all;
 }
 
@@ -99,8 +96,8 @@ a {
 
 ul li a {
     transition: font-weight 200ms, background-color 500ms;
-    font-size: 16px;
-    padding: 22px 22px ;
+    font-size: 1.6rem;
+    padding: 2.2rem 2.2rem ;
 }
 
 ul li a:hover {
@@ -151,8 +148,8 @@ main::before{
 .container-tittle {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin: 45px auto;
+    gap: 2.0rem;
+    margin: 4.5rem auto;
     max-width: 60.0rem;
     max-height: 30.0rem;
    /* border: 1px solid red;*/
@@ -229,8 +226,8 @@ button:hover{
 
 .container-tittle button {
     background: none;
-    padding: 20px 40px;
-    margin: 10px auto;
+    padding: 2.0rem 4.0rem;
+    margin: 1.0rem auto;
     border: 1px white solid;
     border-radius: 4px;
     font-size: 1.6rem;
@@ -252,7 +249,7 @@ button:hover{
     align-items: center;
     text-align: start;
     margin: 0 auto;
-    gap: 20px;
+    gap: 2.0rem;
 }
 
 .section-main-content p{
@@ -261,28 +258,28 @@ button:hover{
 
 .card {
     display: flex;
-    max-width: 1000px;
+    max-width: 100rem;
     align-items: center;
-    gap: 35px;
+    gap: 3.5rem;
 }
 
 .card h2 {
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size: 2.0rem;
+    margin-bottom: 2.5rem;
 }
 
 .card p {
-    min-height: 100px;
+    min-height: 10rem;
     font-size: 1.4rem;
     line-height: 160%;
-    max-width: 700px;
+    max-width: 70rem;
 }
 
 .card h2::before{
     display: flex;
     content: '';
     transform: translateY(-5px);
-    width: 50px;
+    width: 5.0rem;
     margin-bottom: 5px;
     filter: opacity(.3);
     border-top: 3px solid rgb(255, 255, 255);
@@ -309,20 +306,20 @@ button:hover{
 }
 
 .section-main-content .container-content {
-    font-size: 100px;
+    font-size: 10rem;
     text-align: start;
 }
 
 .sub-tittle img {
-    margin: 30px;
+    margin: 3rem;
     border-radius: 2px;
     box-shadow: 0 1rem 1rem -1rem rgb(0, 0, 0);
     
 }
 
 .sub-tittle {
-    margin: 140px auto 70px;
-    max-width: 1000px;
+    margin: 14rem auto 7rem;
+    max-width: 100rem;
     text-align: center;
 }
 
@@ -334,9 +331,9 @@ button:hover{
 .sub-tittle p {
     font-size: 1.8rem;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 600px;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    max-width: 60rem;
     max-height: 900%;
     margin: 0 auto;
 }
@@ -351,7 +348,7 @@ p {
 }
 /* text carousel */
 .carousel {
-    margin: 100px auto 0;
+    margin: 10rem auto 0;
 }
 
 .carousel h1 {
@@ -360,7 +357,7 @@ p {
 
 .content-slider {
     width: 100%;
-    height: 360px;  
+    height: 36rem;  
     
 }
 
@@ -372,7 +369,7 @@ p {
     bottom: 1;
     left: 0;
     height: 25rem;
-    padding-top: 10px;
+    padding-top: 1rem;
     transform: translateY(-10px);
     z-index: -1;
     background-color: rgb(26, 26, 26);
@@ -385,9 +382,9 @@ p {
 }
 
 .slider {
-    height: 320px;
-    width: 680px;
-    margin: 40px auto 0;
+    height: 32rem;
+    width: 68rem;
+    margin: 4rem auto 0;
     overflow: visible;
     position: relative;
     
@@ -395,7 +392,7 @@ p {
 
 .mask {
     overflow: hidden;
-    height: 320px;
+    height: 32rem;
 }
 
 .slider ul {
@@ -405,19 +402,19 @@ p {
 }
 
 .slider li {
-    width: 680px;
-    height: 320px;
+    width: 68rem;
+    height: 32rem;
     position: absolute;
-    top: -325px;
+    top: -32.5rem;
     list-style: none;
 }
 
 .slider .quote {
-    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 .slider .source {
-    font-size: 20px;
+    font-size: 2.0rem;
     text-align: right;
 }
 
@@ -447,7 +444,7 @@ p {
 
 .footer{
     background:#000;
-    padding:30px 0px;
+    padding:3.0rem 0;
     font-family: 'Play', sans-serif;
     text-align:center;
 }
@@ -476,7 +473,7 @@ p {
     
     .footer .row ul li{
         display:inline-block;
-        margin:0px 30px;
+        margin:0px 3rem;
     }
     
     .footer .row a i{
@@ -698,6 +695,15 @@ p {
             text-align: center;
             margin: 0 auto;
         }
+        .secondRow{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .forthRow{
+            display: flex;
+            flex-direction: column-reverse;
+        }
         .section-main-content img{
             width: 90%;
             height: 100%;
@@ -722,17 +728,17 @@ p {
     .footer ul {
         display: flex;
         gap: 0;
-        font-size: 10px;
+        font-size: 1rem;
     }
     .footer .row ul li{
         display:block;
-        margin:10px 0px;
+        margin:1rem 0px;
         text-align:left;
         gap: 0;
-        font-size: 10px;
+        font-size: 1rem;
     }
     .footer ul a {
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     .footer .row a i{
@@ -769,7 +775,7 @@ p {
         margin-bottom: 4rem;
     }
     .footer ul a {
-        font-size: 20px;
+        font-size: 2rem;
         
     }
     .footer .row p {
