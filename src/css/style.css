@@ -159,8 +159,12 @@ main::before{
 .container-tittle h1 {
     font-size: 4.8rem;
     font-weight: bold;
-    animation: glitch 2s ease-in-out infinite ;
     
+    
+}
+
+.glitch {
+    animation: glitch 2s ease-in-out infinite ;
 }
 
 button:hover{
@@ -235,6 +239,7 @@ button:hover{
     color: white;
     transition: transform 1s, background-color 1s ;
     cursor: pointer;
+    backdrop-filter: blur(100px);
 }
 
 .container-tittle button:hover{
@@ -804,4 +809,146 @@ p {
         font-size: 3.5rem;
     }
     
+}
+
+/* Página download */
+.container-tittle-download {
+   text-align: center;
+   max-width: 80rem;
+   margin: 10rem auto ;
+   
+   
+}
+.container-tittle-download h1{
+    margin: 0 auto 2rem;
+}
+.ranks{
+    display: flex;
+    max-width: 80rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 3rem;
+    margin: 0 auto;
+    background: rgba(44, 44, 44, 0.747);
+    padding: 3rem;
+    border-radius: .6rem;
+    box-shadow: 0 3rem 2rem -1rem rgba(0, 0, 0, 0.438);
+}
+.ranks img{ 
+    display: flex;
+    padding: 10px;
+    border-radius: .6rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 9rem;
+    height: auto;
+    box-shadow: 0 2rem 2rem -1rem rgba(0, 0, 0, 0.445);
+    transition: animation cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.ranks img:hover{
+    animation: glitch 1s infinite;
+}
+
+.ranks a {
+    display: flex;
+     align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.ranks a:nth-child(1) {
+    transform: scale(95%);
+}
+.ranks a:nth-child(3) {
+    transform: scale(115%);
+}
+.ranks a:nth-child(4) {
+    transform: scale(120%);
+}
+
+.h1-download{
+filter:  drop-shadow(0px -7px 0 #000000) ;
+}
+.sub-tittle-download img{
+    width: 9rem;
+    height: auto;
+    box-shadow: none;
+    filter:  drop-shadow(0px 3px 1px #00000010) ;
+    align-items: flex-start;
+}
+.sub-tittle-download {
+    background-color: #222222;
+    border-radius: 6px;
+}
+
+
+.sub-tittle-download img:hover{
+    animation: glitch 1s infinite ;
+    
+}
+.division {
+    margin-bottom: 6rem;
+}
+.beneficio-list {
+    max-width: 700px;
+   display: flex;
+   flex-direction: column;
+   font-size: 1.2rem;
+   align-items: flex-start;
+   margin: 0 auto 4rem;
+   text-align: left;
+   background: rgb(44, 44, 44);
+   padding: 3rem;
+   border-radius: .6rem;
+   box-shadow: 0 2rem 1rem -1rem rgba(22, 22, 22, 0.438);
+}
+
+.beneficio-list span {
+    font-size: .8rem;
+    color: rgb(172, 0, 0);
+}
+
+.beneficio-list .span-2{
+    color: rgb(140, 197, 55);
+    font-size: 1rem;
+}
+
+
+.beneficio-list {
+   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+   cursor: pointer;
+}
+
+.beneficio-list:hover {
+    transform: scale(1.2);
+}
+.beneficio-list img {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media (max-width:500px) {
+    .beneficio-list {
+        max-width: 350px;
+       display: flex;
+       flex-direction: column;
+       font-size: 1.2rem;
+       align-items: flex-start;
+       margin: 0 auto 3rem;
+    }
+    .ranks{
+        gap: 1rem;
+    }
+    .ranks a:nth-child(1){
+        display: none;
+    }
+    .container-tittle-download{
+        max-width: 40rem;
+    }
+    .sub-tittle-download{
+        padding: 0 .5rem;
+    }
 }
