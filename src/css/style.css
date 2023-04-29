@@ -768,7 +768,7 @@ p {
     main{
         padding: 15px;
     }
-    ul img{
+   nav ul img{
         display: none;
     }
     header{
