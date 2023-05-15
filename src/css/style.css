@@ -108,6 +108,18 @@ ul li a:hover {
 }
 
 
+
+.sub-tittle .logo .img {
+    box-shadow: none;
+
+}
+
+
+.logo-navbar{
+    max-width: 100rem;
+    max-height: 100%;
+}
+
 .tittle-image-background img{
     display: none;
     position: absolute;
@@ -375,14 +387,17 @@ button:hover{
 }
 
 .sub-tittle img {
+    width: 30rem;
+    height: auto;
     margin: 3rem;
-    border-radius: 2px;
-    box-shadow: 0 1rem 1rem -1rem rgb(0, 0, 0);
+    border-radius: 20px;
+    filter: opacity(100%);
     
 }
 
+
 .sub-tittle {
-    margin: 14rem auto 7rem;
+    margin: 10rem auto 7rem;
     max-width: 100rem;
     text-align: center;
     animation: bottom-to-top 1s 300ms backwards;
