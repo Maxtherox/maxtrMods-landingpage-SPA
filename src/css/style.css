@@ -779,7 +779,7 @@ p {
         z-index: 0;
     }
     
-  }@media (max-width:720px) {
+  }@media (max-width:900px) {
         .slider {
             max-width: 300px;
             font-size: 1.6px;
@@ -976,13 +976,18 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
     align-items: flex-start;
 }
 
+
+
+
 .division {
     margin-bottom: 6rem;
 }
 .beneficio-list {
     max-width: 700px;
+    height: 500px;
    display: flex;
    flex-direction: column;
+   justify-content: flex-start;
    font-size: 1.2rem;
    align-items: flex-start;
    margin: 0 auto 4rem;
@@ -1006,18 +1011,41 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
 
 
 .beneficio-list {
-   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1), border-top 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1), border-top 500ms cubic-bezier(0.075, 0.82, 0.165, 1), filter 1950ms cubic-bezier(0.075, 0.82, 0.165, 1);
    cursor: pointer;
 }
 
 .beneficio-list:hover {
     transform: scale(1.1);
-    background-color: #e1e1e1;
-    color: black;
+    filter: brightness(130%) ;
 }
 .beneficio-list img {
     margin: 0 auto;
     padding: 10px;
+}
+
+.button-apoio {
+    margin: 1rem auto 3rem;
+    background: none;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    transition: transform 1s, background-color 1s  ;
+    cursor: pointer;
+    backdrop-filter: blur(100px);
+    justify-content: center;
+    text-align: center;
+}
+
+.button-apoio:hover{
+    background: #d3d3d3;
+    border: none;
+    color: black;
 }
 
 @media (max-width:500px) {
@@ -1028,6 +1056,7 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
        font-size: 1.2rem;
        align-items: flex-start;
        margin: 0 auto 3rem;
+       height: 500px;
     }
     .ranks{
         gap: 1rem;
@@ -1043,13 +1072,25 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
     }
 }
 
+@media (max-width:400px) {
+    .ranks a:nth-child(2){
+        display: none;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+}
+@media (max-width:200px) {
+    .ranks a:nth-child(3){
+        display: none;
+    }
+}
+
 /* requirements page */
 
 .requirements{
     max-width: 15rem;
     margin-bottom: 10px;
-    
-    
 }
 
 .requirements img{
@@ -1076,6 +1117,25 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
 }
 
 
+@media (min-width: 1001px) {
+    .rankstyle {
+
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 25rem 25rem 25rem 25rem;
+        grid-row: 2/1;
+        gap: 30px;
+        margin: 0 auto;
+         justify-content: center;
+         align-items: stretch;
+     
+     }
+     
+     .last-grid{
+         margin: 0 auto;
+     }
+}
+
 @media (min-width:851px) {
         .quirements-information{
          display: flex;
@@ -1086,7 +1146,10 @@ filter:  drop-shadow(0px -4px 0 #000000) ;
          padding: 3rem 2rem;
         max-width: 100rem;
         }
+        
     }
+
+
 
 @media (max-width:850px){
     .quirements-information{
